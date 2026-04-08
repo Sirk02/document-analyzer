@@ -64,29 +64,3 @@ This guide provides instructions on how to set up and run the project locally.
 
 Ensure both the backend and frontend servers are running in separate terminal windows. You can then access the application by navigating to `http://localhost:3000` in your web browser.
 
-## Deployment to Vercel
-
-This project is configured for easy deployment to Vercel.
-
-### Prerequisites
-
-- A Vercel account.
-- The Vercel CLI installed (`npm install -g vercel`).
-
-### Configuration
-
-A `vercel.json` file has been created in the project root. This file instructs Vercel how to build the Python backend as a serverless function and the React frontend as a static site, routing traffic between them correctly.
-
-### Deploy
-
-1.  **Log in to the Vercel CLI:**
-    ```bash
-    vercel login
-    ```
-
-2.  **Deploy the project:**
-    From the root of the project directory, run:
-    ```bash
-    vercel --prod
-    ```
-    Vercel will automatically detect the monorepo setup, build both the frontend and backend, and deploy them. You will be provided with a public URL for your application.
