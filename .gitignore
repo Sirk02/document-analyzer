@@ -19,9 +19,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Vercel
-.vercel/
-
 # IDE folders
 .vscode/
 .idea/

@@ -1,19 +1,13 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from .api import documents
-import os
 
 app = FastAPI()
 
-# Configure CORS for local development and Vercel deployments
+# Configure CORS for local development
 origins = [
     "http://localhost:3000",
 ]
-
-# Add the Vercel preview URL to the allowed origins if it exists
-vercel_url = os.environ.get("VERCEL_URL")
-if vercel_url:
-    origins.append(f"https://{vercel_url}")
 
 app.add_middleware(
     CORSMiddleware,
