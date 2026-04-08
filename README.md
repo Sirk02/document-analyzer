@@ -2,6 +2,12 @@
 
 This project is a web-based application designed to analyze uploaded documents (PDFs and images) using Artificial Intelligence. It extracts key information, classifies the document type, and determines its validity based on the content.
 
+## Live Demo
+
+The application is deployed on Vercel and can be accessed here:
+
+**[https://document-analyzer-theta.vercel.app/](https://document-analyzer-theta.vercel.app/)**
+
 ## Features
 
 -   **File Upload:** Supports PDF and common image formats.
@@ -24,3 +30,4 @@ This project is a web-based application designed to analyze uploaded documents (
 ## How to Run
 
 For detailed instructions on how to set up the local development environment and deploy the application to Vercel, please refer to the Quickstart Guide located at `/quickstart.md`.
+
